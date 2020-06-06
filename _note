@@ -1,0 +1,14 @@
+Intall
+    => express
+    => knex
+    => sqlite3
+develop
+    => typescript
+    => ts-node-dev
+    => ts-node
+    => @types/express
+
+
+run app => ts-node src/server.ts
+run app dev => ts-node-dev src/server.ts
+run migrations => npx knex migrate:latest --knexfile knexfile.ts migrate:latest
