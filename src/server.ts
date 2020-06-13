@@ -1,10 +1,5 @@
-import express from 'express'
-import routes from './routes'
-import path from 'path'
+import app from './app';
 
-const app = express()
-app.use(routes)
+console.log("http://localhost:3333")
 
-app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')))
-
-app.listen(3000)
+app.listen(3333);
